@@ -52,11 +52,11 @@ The following are being installed by the script (01_dependencies.sh):
         --output secret.oidc-aad-config.env
     ```
 - Add your users in `03_users.sh`:
-```sh
-declare -A USERS
-USERS["Red Rose"]="red.rose@example.com"
-USERS["Blue Sky"]="blue.sky@example.com"
-```
+  ```sh
+  declare -A USERS
+  USERS["Red Rose"]="red.rose@example.com"
+  USERS["Blue Sky"]="blue.sky@example.com"
+  ```
 
 ## Setup & Usage
 ### Running the Setup
