@@ -1,0 +1,3 @@
+# Ignore all decrypted secret files
+secret.*
+rbac
