@@ -1,6 +1,10 @@
 echo "############### prepare-kind-cluster.sh ###############"
 
-# Clean up the Kind cluster if it exists
+# Clean up the old Kind cluster if it exists
+kubectl config delete-context "kind-$KIND_CLUSTER_NAME" || true
+kubectl config delete-cluster "kind-$KIND_CLUSTER_NAME" || true
+kubectl config unset "users.kind-$KIND_CLUSTER_NAME" || true
+kubectl config unset "users.$OIDC_USER_NAME" || true
 kind delete cluster --name "$KIND_CLUSTER_NAME" || true
 
 # Load env vars in the kind template and create the Kind cluster

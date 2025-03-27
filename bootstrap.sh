@@ -17,4 +17,4 @@ source "$SCRIPT_DIR/07_kind-cluster.sh"
 source "$SCRIPT_DIR/08_kubeconfig.sh"
 source "$SCRIPT_DIR/09_tests.sh"
 
-echo "✅ OIDC established successfully!"
+echo -e "\n\n✅ OIDC established successfully!"
